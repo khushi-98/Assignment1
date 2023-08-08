@@ -1,0 +1,254 @@
+#ques 1
+L= [11,12,13,14]
+L.append(50)
+L.append(60)
+print(L)
+L.remove(11)
+#L.remove(13)
+print(L)
+L.sort()
+print(L)
+L.sort(reverse=True)
+print(L)
+print(L.index(13))
+print(len(L))
+print(sum(L))
+
+print("Sum of all Odd Numbers")
+c=0
+for i in L:
+    if i%2==1:
+      c=i+c
+  
+print(c)      
+
+print("The sum of all Even numbers:-")
+d=0
+for i in L:
+    if i%2==0:
+        d=i+d
+print(d)
+        
+def sumprimes(l):
+    sum=0
+    for value in l:
+        for i in range(1,value):
+            if value%i==0:
+               sum=sum+value     
+    print(sum)
+    
+
+print(L.clear())
+#print(L.delete)
+
+#ques 2
+d={1:5.6,2:7.8,3:6.6,4:8.7,5:7.7}
+d[8]=8.8
+print(d)
+del d[2]
+print(d)
+
+if 6 in d:
+        print("Key is present")
+else:
+        print("Key is not present")
+        
+
+count=0
+for i in d:
+   count=count+1
+print(count)
+
+sum=0
+for i in d:
+    sum=sum+i
+print(sum)
+
+d.update({3:7.1})
+print(d)
+d.clear()
+print(d)
+
+#ques 3
+S1=set([10,20,30,40,50,60])
+S2=set([40,50,60,70,80,90])
+S1.add(55)
+S1.add(66)
+print(S1)
+S1.remove(10)
+S1.remove(30)
+print(S1)
+
+
+if 40 in S1:
+        print("Yes,It is present")
+else:
+        print("No,It is not present")
+        
+S3=S1.union(S2)
+print(S3)
+S4=S1.intersection(S2)
+print(S4)
+S5=S1.difference(S2)
+print(S5)
+
+#ques 4
+for i in range(0,5):
+    s =input("Enter words with length of 60-80:-")
+if len(s)>=60 and len(s)<=80:
+    print(s) 
+    
+for num in range(600, 801):
+    for i in range(2, num):
+        if num % i == 0:
+            break
+        else:
+            print(num)
+            break
+#ques 5
+l1=[]
+for i in range(1,11):
+x=int(input("Enter number:"))
+ l1.append(x)
+print(l1)
+l2=[]
+for j in range(1,11):
+   y=int(input("Enter number:-"))
+  l2.append(y)
+print(l2)
+
+a=set(l1)
+b=set(l2)
+c=a.intersection(b)
+print(c)
+d=a.union(b)
+e=d-c
+print(e)
+
+print(min(l1))
+print(min(l2))
+print(max(l1))
+print(max(l2))
+g=sum(l1)+sum(l2)
+print(g)
+
+#ques 6
+import random
+l=[]
+for i in range(0,100):
+    x=int(input("Enter a number:-"))
+    l.append(x)
+    
+print(l)
+
+for i in range(100):
+    if i%2==0:
+     print(i)
+     
+for i in range(100):
+    if i%2==1:
+        print(i)
+        
+for num in range(100):
+    for i in range(2,num):
+        if num%i==0:
+            break
+        else:
+            print(num)
+
+#ques 7
+d={1:"one",2:"two",3:"three",4:"four",5:"five"}
+print(*d.items(), sep='\n')
+
+#ques 8
+l=["one","two","three","four","five"]
+for i in l:
+    c=len(i)
+    print(i,c)
+#ques 9
+import random
+import string
+
+for i in range(1,100):
+    letters=string.ascii_lowercase
+    print(''.join(random.choice(letters) for j in range(15)))
+
+#ques 10
+for num in range(600, 801):
+    for i in range(2, num):
+        if num % i == 0:
+            break
+        else:
+            print(num)
+            break
+#ques 11
+
+import time
+start=time.time()
+for i in range(3):
+    print("Hello")
+    
+end=time.time()
+print("Execution time",end-start)
+
+#ques 12
+import time
+import random
+start=time.time()
+l=[]
+for i in range(0,5000):
+    num= random.randint(10,100)
+    l.append(num)
+print(l)
+l.sort()
+print(l)
+end=time.time()
+print("Execution time",end-start)
+
+
+start=time.time()
+l1=[]
+for i in range(0,15000):
+    num=random.randint(10,100)
+    l.append(num)
+print(l)
+l.sort()
+print(l)
+end=time.time()
+print("Execution Time",end-start)
+
+start=time.time()
+l1=[]
+for i in range(0,10000):
+    num=random.randint(10,100)
+    l.append(num)
+print(l)
+l.sort()
+print(l)
+end=time.time()
+print("Execution Time",end-start)
+
+start=time.time()
+l1=[]
+for i in range(0,20000):
+    num=random.randint(10,100)
+    l.append(num)
+print(l)
+l.sort()
+print(l)
+end=time.time()
+print("Execution Time",end-start)
+start=time.time()
+l1=[]
+for i in range(0,25000):
+    num=random.randint(10,100)
+    l.append(num)
+print(l)
+l.sort()
+print(l)
+end=time.time()
+print("Execution Time",end-start)
+
+#ques 13
+
+
